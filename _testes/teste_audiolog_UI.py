@@ -27,7 +27,7 @@ while rodar:
             print('Link vazio')
         else:
             link = values[0]
-            BaixarMP3(link)
+            BaixarMP4(link)
     elif event == 'Baixar MP3':
         # Baixando mp3 com sucesso
         if values[0] == '':

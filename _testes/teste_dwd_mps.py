@@ -8,7 +8,7 @@ def BaixarMP3(link):
     try:
         video = YouTube(link)
         musica = video.streams.get_audio_only()
-        musica.download(mp3=True,output_path=diretorio)
+        musica.download(mp3=True)
         print(f'{video.title} baixado com sucesso!')
     except:
         print('Erro econtrado ao tentar realizar o download!')
@@ -17,6 +17,6 @@ def BaixarMP4(link):
     try:
         video = YouTube(link)
         vd = video.streams.get_highest_resolution()
-        vd.download(output_path=diretorio)
+        vd.download()
     except:
         print('Erro econtrado ao tentar realizar o download!')

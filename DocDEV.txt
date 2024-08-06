@@ -2,7 +2,7 @@
 =-=-=-=-=-=-=-=-=-=-=-=-=-=
 Projeto: Audiolog
 -----------------
-Sobre: Audiolog é um aplicativo desktop para downloads de midia MP3 do YouTube
+Sobre: Audiolog é um aplicativo desktop para downloads de midia MP3 e MP4 do YouTube
 ------------------------------------------------------------------------------
 
 Observações:
