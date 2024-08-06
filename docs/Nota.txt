@@ -1,0 +1,12 @@
+Nota:
+
+Pendencia:
+	-
+
+=======================================
+Pendencia: @CONCLUÍDA
+   - Seguir desenvolvimento do Audiolog
+	-> UI
+	-> Integração com a API
+	-> Update de documentacao
+=======================================
