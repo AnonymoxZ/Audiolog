@@ -9,6 +9,6 @@ Sugiro a utilização de um ambiente virtual, pois algumas bibliotecas podem ent
 - 2º ```cd venv/ cd scripts/ activate```
 - 3º ```(env) => Ambiente ativado```
 
-Bibliotecas:
+Bibliotecas: 
 - ```pip install pytubefix```
 - ```pip install pysimplegui```
