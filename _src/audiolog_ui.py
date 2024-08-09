@@ -3,17 +3,16 @@ import PySimpleGUI as tela
 from settings import *
 from dwd_mps import *
 
-
 # configuraçoes de tela
 titulo = 'Audiolog'
-tela.theme('Black')
+tela.theme('NeonBlue1')
 
 # Interface principal
 def Interface():
     definiçoes_tela = [[tela.Text('Insira o link para download:')],
                     [tela.InputText()],
                     [tela.Text('Escolha um formato para download:')],
-                    [tela.Button('Baixar MP4',button_color='yellow'),tela.Button('Baixar MP3',button_color='blue')]]
+                    [tela.Button('Baixar MP4',button_color='black', mouseover_colors='red'),tela.Button('Baixar MP3',mouseover_colors='blue')]]
 
     janela = tela.Window(titulo, definiçoes_tela)
     # loop da janela
