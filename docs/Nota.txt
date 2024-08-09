@@ -1,7 +1,13 @@
 Nota:
 
 Pendencia:
-	-
+	- Atualizar readme.md
+	- Versionar recentes modificacoes de style 
+
+Nova feature: STATUS = (em planejamento);
+	- Novas opções para:
+		-> Ver nome do arquivo de video ou musica sem precisar baixar
+		-> Baixar playlists
 
 =======================================
 Pendencia: @CONCLUÍDA

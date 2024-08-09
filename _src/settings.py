@@ -18,3 +18,6 @@ def NoteClose():
     print(30*'=')
     print('Close Audiolog')
     print(30*'=')
+
+def NoteSucess(t):
+    print(f'{t} baixado com sucesso!')

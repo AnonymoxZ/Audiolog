@@ -1,6 +1,6 @@
 # Audiolog - Downloader MP3 | v0.1
 from pytubefix import YouTube
-from settings import NoteError
+from settings import *
 
 # Diretorio de saída de download
 diretorio = 'C:\\Users\\User\\OneDrive\\Área de Trabalho\\baixados'
@@ -10,7 +10,7 @@ def BaixarMP3(link):
         video = YouTube(link)
         musica = video.streams.get_audio_only()
         musica.download(mp3=True)
-        print(f'{video.title} baixado com sucesso!')
+        NoteSucess(video.title)
     except:
         NoteError()
 
@@ -19,5 +19,6 @@ def BaixarMP4(link):
         video = YouTube(link)
         vd = video.streams.get_highest_resolution()
         vd.download()
+        NoteSucess(video.title)
     except:
         NoteError()
