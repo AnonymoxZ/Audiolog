@@ -19,5 +19,6 @@ def BaixarMP4(link):
         video = YouTube(link)
         vd = video.streams.get_highest_resolution()
         vd.download()
+        print(f'{video.title} baixado com sucesso!')
     except:
         NoteError()
