@@ -1,0 +1,17 @@
+# Ignorar ambiente virtual
+venv/
+
+# Arquivos de cache e temporários
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos de log
+*.log
+
+# Arquivos de configuração com dados sensíveis
+.env
+
+# Ignorar outros arquivos e diretórios
+*.tmp
+*.swp
