@@ -1,9 +1,0 @@
-© Copyright by Anonymox
-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Projeto: Audiolog
------------------
-Sobre: Audiolog é um aplicativo desktop para downloads de midia MP3 e MP4 do YouTube
-------------------------------------------------------------------------------
-
-Observações:
-- Uso pessoal livre, sem fins de divulgação a maior nivel além de educacionais.
