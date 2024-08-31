@@ -26,3 +26,6 @@ Voce pode altera-los em ```dwd_mps.py```
 
 3 > ```(env) => Ambiente ativado```
 
+
+# Executando
+```py main.py```
