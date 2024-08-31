@@ -9,8 +9,9 @@ Sugiro a utilização de um ambiente virtual, pois algumas bibliotecas podem ent
 
 
 Bibliotecas:
-```pip install pytubefix```
-```pip install pysimplegui```
+
+- ```pip install pytubefix```
+- ```pip install pysimplegui```
 
 
 
