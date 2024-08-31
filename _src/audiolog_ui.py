@@ -1,6 +1,6 @@
 # Audiolog - Interface Grafica | testes v0.1
 import PySimpleGUI as tela
-from settings import *
+import settings
 from dwd_mps import *
 
 # configuraçoes de tela
@@ -19,6 +19,7 @@ def Interface():
     while True:
         event, values = janela.read()
         if event == tela.WIN_CLOSED or event == "Encerrar":
+            settings.NoteClose()
             quit()
             break
         elif event == 'Baixar MP4':
@@ -37,4 +38,4 @@ def Interface():
                 BaixarMP3(link)
 
     janela.close()
-    Close()
+
