@@ -8,8 +8,15 @@ Sugiro a utilização de um ambiente virtual, pois algumas bibliotecas podem ent
 
 
 Bibliotecas:
+
+- ```pip install pytubefix```
+- ```pip install pysimplegui```
+
+
+Bibliotecas:
 ```pip install pytubefix```
 ```pip install pysimplegui```
+
 
 
 # Configurações de ambiente
@@ -17,8 +24,14 @@ Os diretorios de saida dos dowloads devem ter seu caminho path atualizado confor
 Voce pode altera-los em ```dwd_mps.py```
 
 
-1 > ```py -b venv env```
+
+# Virtualenv
+1 > ```py -m venv env```
 
 2 > ```cd venv/ cd scripts/ activate```
 
 3 > ```(env) => Ambiente ativado```
+
+
+# Executando
+```py main.py```

@@ -1,4 +1,4 @@
-# Audiolog - Downloader MP3 | v0.1
+# Audiolog - Downloader MPS | v0.1
 from pytubefix import YouTube
 from settings import *
 
