@@ -21,7 +21,7 @@ Voce pode altera-los em ```dwd_mps.py```
 
 
 # Virtualenv
-1 > ```py -b venv env```
+1 > ```py -m venv env```
 
 2 > ```cd venv/ cd scripts/ activate```
 
