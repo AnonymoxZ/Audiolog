@@ -1,5 +1,4 @@
 # Audiolog
-
 Sobre:
 Audiolog é um projeto simples de código aberto, com o propósito evidente de baixar mídia MP4 e MP3 do YouTube, tendo suas raízes em sua versão mais anterior, o Videoload.
 
@@ -19,5 +18,5 @@ Voce pode altera-los em ```dwd_mps.py```
 3 > ```(env) => Ambiente ativado```
 
 Bibliotecas:
-```pip install pytubefix```
-```pip install pysimplegui```
+- ```pip install pytubefix```
+- ```pip install pysimplegui```
