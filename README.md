@@ -17,7 +17,7 @@ Os diretorios de saida dos dowloads devem ter seu caminho path atualizado confor
 Voce pode altera-los em ```dwd_mps.py```
 
 
-1 > ```py venv env```
+1 > ```py -b venv env```
 
 2 > ```cd venv/ cd scripts/ activate```
 
