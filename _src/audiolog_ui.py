@@ -10,9 +10,10 @@ tela.theme('NeonBlue1')
 # Interface principal
 def Interface():
     definiçoes_tela = [[tela.Text('Insira o link para download:')],
-                    [tela.InputText()],
+                    [tela.Input(size=30,key='-URL-')],
                     [tela.Text('Escolha um formato para download:')],
-                    [tela.Button('Baixar MP4',button_color='black', mouseover_colors='red'),tela.Button('Baixar MP3',mouseover_colors='blue')]]
+                    [tela.Button('Baixar MP4',button_color='black', mouseover_colors='yellow'),tela.Button('Baixar MP3',mouseover_colors='blue')],
+                    [tela.Button('Baixar tumblr')]]
 
     janela = tela.Window(titulo, definiçoes_tela)
     # loop da janela
@@ -24,18 +25,18 @@ def Interface():
             break
         elif event == 'Baixar MP4':
             # Baixando mp4 com sucesso
-            if values[0] == '':
+            if values['-URL-'] == '':
                 print('Link vazio')
             else:
-                link = values[0]
+                link = values['-URL-']
                 BaixarMP4(link)
+                janela['-URL-'].update('')
         elif event == 'Baixar MP3':
             # Baixando mp3 com sucesso
-            if values[0] == '':
+            if values['-URL-'] == '':
                 print('Link vazio')
             else:
-                link = values[0]
+                link = values['-URL-']
                 BaixarMP3(link)
-
+                janela['-URL-'].update('')
     janela.close()
-

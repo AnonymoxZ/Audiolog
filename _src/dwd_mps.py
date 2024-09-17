@@ -1,5 +1,6 @@
 # Audiolog - Downloader MPS | v0.1
 from pytubefix import YouTube
+from pytubefix.cli import on_progress
 from settings import *
 
 # Diretorio de saída de download
@@ -8,10 +9,10 @@ videos = 'C:\\Users\\User\\OneDrive\\Área de Trabalho\\videos'
 
 def BaixarMP3(link):
     try:
-        video = YouTube(link)
-        musica = video.streams.get_audio_only()
-        musica.download(mp3=True,output_path=musicas)
-        NoteSucess(video.title)
+        audio = YouTube(link,on_progress_callback = on_progress)
+        musica = audio.streams.get_audio_only()
+        musica.download(mp3=True)
+        NoteSucess(audio.title)
     except:
         NoteError()
 
@@ -19,6 +20,6 @@ def BaixarMP4(link):
     try:
         video = YouTube(link)
         vd = video.streams.get_highest_resolution()
-        vd.download(output_path=videos)
+        vd.download()
     except:
         NoteError()
