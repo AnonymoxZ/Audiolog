@@ -4,7 +4,7 @@ from pytubefix.cli import on_progress
 from settings import *
 
 # Diretorio de saída de download
-musicas = 'C:\\Users\\Vitor\\OneDrive\\Área de Trabalho\\musicas'
+musicas = 'C:\\Users\\User\\OneDrive\\Área de Trabalho\\musicas'
 videos = 'C:\\Users\\User\\OneDrive\\Área de Trabalho\\videos'
 
 def BaixarMP3(link):
