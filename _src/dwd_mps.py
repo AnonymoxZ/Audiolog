@@ -7,12 +7,12 @@ from settings import *
 musicas = 'C:\\Users\\User\\OneDrive\\Área de Trabalho\\musicas'
 videos = 'C:\\Users\\User\\OneDrive\\Área de Trabalho\\videos'
 
-def BaixarMP3(link):
+def BaixarM4A(link):
     try:
         audio = YouTube(link,on_progress_callback = on_progress)
         musica = audio.streams.get_audio_only()
-        musica.download(mp3=True)
         NoteSucess(audio.title)
+        musica.download()
     except:
         NoteError()
 

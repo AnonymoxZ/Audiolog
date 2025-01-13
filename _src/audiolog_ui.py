@@ -12,14 +12,13 @@ def Interface():
     definiçoes_tela = [[tela.Text('Insira o link para download:')],
                     [tela.Input(size=30,key='-URL-')],
                     [tela.Text('Escolha um formato para download:')],
-                    [tela.Button('Baixar MP4',button_color='black', mouseover_colors='yellow'),tela.Button('Baixar MP3',mouseover_colors='blue')],
-                    [tela.Button('Baixar tumblr')]]
+                    [tela.Button('Baixar MP4',button_color='black', mouseover_colors='yellow'),tela.Button('Baixar M4A',mouseover_colors='blue')]]
 
     janela = tela.Window(titulo, definiçoes_tela)
     # loop da janela
     while True:
         event, values = janela.read()
-        if event == tela.WIN_CLOSED or event == "Encerrar":
+        if event == tela.WIN_CLOSED:
             settings.NoteClose()
             quit()
             break
@@ -31,12 +30,12 @@ def Interface():
                 link = values['-URL-']
                 BaixarMP4(link)
                 janela['-URL-'].update('')
-        elif event == 'Baixar MP3':
+        elif event == 'Baixar M4A':
             # Baixando mp3 com sucesso
             if values['-URL-'] == '':
                 print('Link vazio')
             else:
                 link = values['-URL-']
-                BaixarMP3(link)
+                BaixarM4A(link)
                 janela['-URL-'].update('')
     janela.close()

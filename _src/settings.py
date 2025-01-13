@@ -7,7 +7,7 @@ def cls():
     system('clear')
 
 # Notas do sistema
-def NoteError   ():
+def NoteError():
     print(46*'=')
     print('Erro encontrado ao tentar realizar download!')
     print(46*'=')
