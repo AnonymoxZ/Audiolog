@@ -1,4 +1,10 @@
 # Audiolog
+
+Sobre: Audiolog é um aplicativo desktop para downloads de midia M4A e MP4 do YouTube
+------------------------------------------------------------------------------
+
+Observações:
+- Uso pessoal livre, sem fins de divulgação a maior nivel além de educacionais.
 Sobre:
 Audiolog é um projeto simples de código aberto, com o propósito evidente de baixar mídia MP4 e MP3 do YouTube, tendo suas raízes em sua versão mais anterior, o Videoload.
 
@@ -12,21 +18,13 @@ Bibliotecas:
 - ```pip install pysimplegui```
 
 
-
 # Configurações de ambiente
 Os diretorios de saida dos dowloads devem ter seu caminho path atualizado conforme sua maquina.
 Voce pode altera-los em ```dwd_mps.py```
 
 
-
-# Virtualenv
-1 > ```py -m venv env```
-
-2 > ```cd venv/ cd scripts/ activate```
-
-3 > ```(env) => Ambiente ativado```
-
-
-
 # Executando
 ```py main.py```
+
+
+© Copyright by Anonymox
