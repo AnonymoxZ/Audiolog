@@ -1,11 +1,9 @@
 # Audiolog
 
-Sobre: Audiolog é um aplicativo desktop para downloads de midia M4A e MP4 do YouTube
-------------------------------------------------------------------------------
+<strong>Sobre: Audiolog é um aplicativo desktop para downloads de midia M4A e MP4 do YouTube</strong>
 
 Observações:
 - Uso pessoal livre, sem fins de divulgação a maior nivel além de educacionais.
-Sobre:
 Audiolog é um projeto simples de código aberto, com o propósito evidente de baixar mídia MP4 e MP3 do YouTube, tendo suas raízes em sua versão mais anterior, o Videoload.
 
 # Instalação
