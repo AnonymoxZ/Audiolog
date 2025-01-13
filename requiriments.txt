@@ -1,2 +1,0 @@
-PySimpleGUI==5.0.6
-pytubefix==6.13.1

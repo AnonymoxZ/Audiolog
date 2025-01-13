@@ -1,7 +1,7 @@
 /docs/
 
 # Ignorar ambiente virtual
-venv/
+env/
 
 # Arquivos de cache e temporários
 __pycache__/
@@ -10,9 +10,6 @@ __pycache__/
 
 # Arquivos de log
 *.log
-
-# Arquivos de configuração com dados sensíveis
-.env
 
 # Ignorar outros arquivos e diretórios
 *.tmp
