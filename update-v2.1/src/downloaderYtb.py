@@ -10,9 +10,8 @@ import mimetypes
 
 class DownloaderYtb:
     OUTPUT_FILES_AUDIO = '../output/audio/' # change for input files from CTkinter
-    OUTPUT_FILES_VIDEO = '../output/video/'
     OUTPUT_FILES_COVER = '../output/covers/'
-    FILES_TYPE = ['mp4','m4a','mp3']
+    FILES_TYPE = ['m4a','mp3']
 
     def __init__(self, url:str):
         self.url = url
@@ -21,7 +20,6 @@ class DownloaderYtb:
     def _insert_tags(self, file_type:str):
         url_video = YouTube(self.url)
         file_path_cover = f'{self.OUTPUT_FILES_COVER}{url_video.title}.jpg'
-        file_path_video = f'{self.OUTPUT_FILES_VIDEO}{url_video.title}.mp4'
         file_path_m4a = f'{self.OUTPUT_FILES_AUDIO}{url_video.title}.m4a'
         file_path_mp3 = f'{self.OUTPUT_FILES_AUDIO}{url_video.title}.mp3'
         
@@ -66,7 +64,7 @@ class DownloaderYtb:
 
     def download_m4a(self):
         url_video = YouTube(self.url)
-        type_f = self.FILES_TYPE[1]
+        type_f = self.FILES_TYPE[0]
         streams = url_video.streams.get_audio_only()
         streams.download(output_path=self.OUTPUT_FILES_AUDIO)
         self._get_thumbnail()
@@ -77,7 +75,7 @@ class DownloaderYtb:
     def convert_to_mp3(self):
         # ---------------------------------
         url_video = YouTube(self.url)
-        type_f = self.FILES_TYPE[2]
+        type_f = self.FILES_TYPE[1]
         path_file_m4a = f'../output/audio/{url_video.title}.m4a'
         path_file_mp3 = f'../output/audio/{url_video.title}.mp3'
         # ---------------------------------
@@ -90,7 +88,3 @@ class DownloaderYtb:
         # remove m4a
         if os.path.isfile(path_file_mp3):
             os.remove(path_file_m4a)
-
-
-
-test = DownloaderYtb('https://youtu.be/ko70cExuzZM?si=Mc_OJrDe8l9zNXB6')
