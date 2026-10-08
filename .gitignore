@@ -2,6 +2,12 @@
 
 # Ignorar ambiente virtual
 env/
+*/venv
+*.bat
+*/docs/
+
+# testes
+**/tests/
 
 # Arquivos de cache e temporários
 __pycache__/
@@ -14,3 +20,9 @@ __pycache__/
 # Ignorar outros arquivos e diretórios
 *.tmp
 *.swp
+
+*/compile/
+
+# files utils
+**/utils/
+
