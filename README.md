@@ -9,12 +9,12 @@ Audiolog is a desktop application for downloading audio from YouTube videos in M
 - FFmpeg installed on the `PATH` to download in MP3 format
 - Internet access
 
-`customtkinter==6.0.0`
-`mutagen==1.48.1`
-`pydub==0.25.1`
-`audioop-lts==0.2.2`
-`pytubefix==11.1.0`
-`requests==2.34.2`
+- `customtkinter==6.0.0`
+- `mutagen==1.48.1`
+- `pydub==0.25.1`
+- `audioop-lts==0.2.2`
+- `pytubefix==11.1.0`
+- `requests==2.34.2`
 
 ## Installation
 
